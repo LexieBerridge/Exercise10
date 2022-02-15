@@ -27,20 +27,20 @@ while extensions < 2:  # infinite loop
                 if functionchoice == "*":
                     print(val1, '*', val2, '=', multiply(int(val1), int(val2)))
                     val3 = (multiply(int(val1), int(val2)))
-                    val0 = val0 + val3
+                    val0 = 0 + val3
                 elif functionchoice == "+":
                     print(val1, '+', val2, '=', add(int(val1), int(val2)))
                     val3 = add(int(val1), int(val2))
-                    val0 = val0 + val3
+                    val0 = 0 + val3
                 elif functionchoice == "-":
                     print(val1, '-', val2, '=', sub(int(val1), int(val2)))
                     val3 = (sub(int(val1), int(val2)))
-                    val0 = val0 + val3
+                    val0 = 0 + val3
                 elif functionchoice == "/":
                     if int(val1) != 0 and int(val2) != 0:
                         print(val1, '-', val2, '=', divide(int(val1), int(val2)))
                         val3 = divide(int(val1), int(val2))
-                        val0 = val0 + val3
+                        val0 = 0 + val3
                     else:
                         print('0 is not a valid input for this function')
                 else:
@@ -57,21 +57,21 @@ while extensions < 2:  # infinite loop
             if val2.isdecimal():
                 if functionchoice == "*":
                     print(val0, '*', val2, '=', multiply(int(val0), int(val2)))
-                    val3 = (multiply(int(val1), int(val2)))
+                    val3 = (multiply(int(val0), int(val2)))
                     val0 = val0 + val3
                 elif functionchoice == "+":
                     print(val0, '+', val2, '=', add(int(val0), int(val2)))
                     val3 = add(int(val0), int(val2))
-                    val0 = val0 + val3
+                    val0 = 0 + val3
                 elif functionchoice == "-":
                     print(val0, '-', val2, '=', sub(int(val0), int(val2)))
                     val3 = (sub(int(val0), int(val2)))
-                    val0 = val0 + val3
+                    val0 = 0 + val3
                 elif functionchoice == "/":
                     if int(val0) != 0 and int(val2) != 0:
                         print(val0, '-', val2, '=', divide(int(val0), int(val2)))
                         val3 = divide(int(val0), int(val2))
-                        val0 = val0 + val3
+                        val0 = 0 + val3
                     else:
                         print('0 is not a valid input for this function - try again - value stored')
                 else:
